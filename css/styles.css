@@ -1,0 +1,527 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#loader-page {
+  background-color: rgba(255, 250, 253, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 2s ease-in-out;
+  z-index: 10000;
+}
+
+.loader-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 160px;
+  height: 160px;
+}
+
+.loader-container .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: solid 4px transparent;
+  border-top-color: #0dac77;
+  border-left-color: #0dac77;
+  border-radius: 50%;
+  animation: loader 1.2s ease-in-out infinite;
+}
+
+.loader-container .loader-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  border: solid 4px transparent;
+  border-bottom-color: #a5004a;
+  border-right-color: #a5004a;
+  border-radius: 50%;
+  animation: loader-2 1.2s ease-in-out infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes loader-2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.header-section {
+  background-image: url("../img/oficina-las-grutas.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  height: 100vh;
+}
+
+.header-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Inicio de menú */
+
+nav.navbar {
+  background-color: #000000;
+  opacity: 0.7;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 99;
+}
+.right {
+  text-align: right;
+}
+.navbar-nav a {
+  font-family: "Spartan", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  letter-spacing: 1px;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px black;
+  background-size: 100% 2px;
+}
+
+.navbar-toggler {
+  font-size: 20px;
+  margin: 5px;
+  background-color: white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/*Fin de menú */
+
+.center {
+  text-align: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+hr {
+  color: #ffffff;
+}
+.left {
+  text-align: left;
+}
+#start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Spartan", sans-serif;
+  font-size: 65px;
+  color: #ffffff;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.subtitle {
+  display: hidden;
+  font-family: "Spartan", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: #ffffff;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.btn {
+  font-size: 15px;
+  width: 250px;
+  height: 60px;
+  padding: 3px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: all 800ms;
+  font-family: "Spartan", sans-serif;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.btn:hover {
+  border: 1px solid;
+  color: #ffffff;
+  background-color: #681212;
+  text-shadow: 0 0 5px #000000;
+}
+
+.start {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  animation: shakeY;
+  --animate-duration: 5s;
+  transition: all 800ms;
+}
+
+.arrow:hover {
+  color: #681212;
+  transform: scale(1.2, 1.2);
+}
+
+#services {
+  margin-top: 0px;
+}
+
+.sec-title {
+  margin-top: 60px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: "Spartan", sans-serif;
+}
+
+.services-one {
+  background-image: url("../img/image (4).jpg");
+  background-position: center;
+  background-size: cover;
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+.services-two {
+  background-image: url("../img/image (2).jpg");
+  background-position: center;
+  background-size: cover;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.services-three {
+  background-image: url("../img/image (3).jpg");
+  background-position: center;
+  background-size: cover;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.services-four {
+  background-image: url("../img/image (1).jpg");
+  background-position: center;
+  background-size: cover;
+  animation: fadeInRight;
+  animation-duration: 2s;
+}
+
+.card-services:hover {
+  opacity: 0.8;
+  border-bottom: 10px solid #681212;
+}
+
+.card-services {
+  height: 350px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1000ms;
+}
+
+.services-title {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-services {
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #413c3c;
+  width: 150px;
+  height: 40px;
+}
+
+.ideal-title {
+  margin-top: 60px;
+  font-size: 50px;
+  font-family: "Spartan", sans-serif;
+}
+
+.ideal-subtitle {
+  font-size: 25px;
+  font-family: "Spartan", sans-serif;
+}
+
+.ideal-paragraph {
+  border-left: 1px solid #888080;
+  padding-left: 10px;
+  margin-top: 50px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.pd-parallax {
+  position: relative;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.pd-parallax h1 {
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.pd-parallax h3 {
+  font-size: 15px;
+}
+
+.pd-parallax .pd-title {
+  padding-top: 50px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.contact {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.first-title-info {
+  text-align: left;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.title-info {
+  font-weight: bold;
+  border-bottom: 3px solid #681212;
+}
+
+.paragraph-info {
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.bold-info {
+  font-size: 30px;
+}
+
+#about-us {
+  margin-top: 50px;
+
+  position: relative;
+}
+
+#about-us::after {
+  content: "";
+  background-image: url("../img/presentation.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.wrap-team-info {
+}
+
+.bold-team {
+  font-size: 50px;
+}
+
+.img-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.team-img {
+  width: 600px;
+  height: 600px;
+}
+
+.team-title {
+  font-size: 30px;
+}
+
+.team-subtitle {
+  font-size: 18px;
+}
+
+.team-text {
+  font-size: 15px;
+}
+
+.carousel-caption {
+  font-size: 20px;
+}
+
+.contact-title {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 60px;
+  font-family: "Spartan", sans-serif;
+}
+
+.contact-subtitle {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Spartan", sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.contact-text {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.social-wrap {
+  margin-top: 10px;
+  display: flex;
+}
+
+.social-item {
+  left: 0;
+  border-radius: 50px 50px 50px 50px;
+  margin-right: 10px;
+}
+
+.form {
+  width: 440px;
+  height: 440px;
+  margin-top: 40px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+.form div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+.form span {
+  margin: 0 5px 0 15px;
+}
