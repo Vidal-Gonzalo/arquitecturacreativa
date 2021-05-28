@@ -5,6 +5,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 #loader-page {
   background-color: rgba(255, 250, 253, 0.9);
   height: 100%;
@@ -286,6 +290,22 @@ nav.navbar {
   background-color: #413c3c;
   width: 150px;
   height: 40px;
+}
+
+.img-fluid {
+  min-width: 400px !important;
+  min-height: 400px !important;
+}
+
+.separation {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-paragraph {
+  border: none !important;
 }
 
 .ideal-title {
