@@ -383,21 +383,28 @@ nav.navbar {
   font-size: 30px;
 }
 
+#team-carousel .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .team-img {
   width: 600px;
   height: 600px;
 }
 
 .team-title {
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .team-subtitle {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .team-text {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .carousel-caption {
@@ -595,6 +602,36 @@ nav.navbar {
   .pd-image .pd-title {
     width: 400px;
   }
+  .wrap-team-info {
+    padding-left: 30px;
+  }
+
+  .team-title {
+    font-size: 22px;
+  }
+
+  .team-subtitle {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .team-text {
+    margin-top: 20px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 767px) {
+  .wrap-team-info {
+    margin-top: 150px;
+  }
+  .team-subtitle {
+    margin-top: 20px;
+  }
+
+  .team-text {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -650,6 +687,18 @@ nav.navbar {
 
   .pd-image .pd-title {
     width: 500px;
+  }
+
+  .team-title {
+    font-size: 25px;
+  }
+
+  .team-subtitle {
+    font-size: 15px;
+  }
+
+  .team-text {
+    font-size: 13px;
   }
 }
 
