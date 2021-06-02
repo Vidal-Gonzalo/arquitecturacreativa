@@ -1,5 +1,7 @@
+/*ScrollReveal*/
 ScrollReveal().reveal(".load-hidden", { delay: 500 });
 
+/*Loader*/
 function hidePage() {
   var header = document.getElementById("header");
   var page = document.getElementById("rest-page");
@@ -25,22 +27,3 @@ hidePage();
 setTimeout(function () {
   showPage();
 }, 2500);
-
-Array.prototype.forEach.call(
-  document.querySelectorAll(".pd-parallax"),
-  function (elem) {
-    elem.style.backgroundImage =
-      "url(" + elem.getAttribute("data-parallax-image") + ")";
-  }
-);
-
-var owl = document.querySelectorAll(".owl-carousel");
-owl.owlCarousel();
-
-document.querySelector(".customNextBtn").click(function () {
-  owl.trigger("next.owl.carousel");
-});
-
-document.querySelector(".customPrevBtn").click(function () {
-  owl.trigger("prev.owl.carousel");
-});

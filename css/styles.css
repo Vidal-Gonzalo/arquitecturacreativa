@@ -145,7 +145,9 @@ nav.navbar {
 /*Fin de menú */
 
 .center {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-centered {
@@ -164,6 +166,7 @@ nav.navbar {
 
 .title {
   font-family: "Spartan", sans-serif;
+  margin-top: 15px;
   font-size: 65px;
   color: #ffffff;
   animation: fadeIn;
@@ -174,6 +177,7 @@ nav.navbar {
   display: hidden;
   font-family: "Spartan", sans-serif;
   font-size: 27px;
+  margin-top: 15px;
   font-weight: 400;
   color: #ffffff;
   animation: fadeIn;
@@ -182,6 +186,7 @@ nav.navbar {
 
 .btn {
   font-size: 15px;
+  margin-top: 30px;
   width: 250px;
   height: 60px;
   padding: 3px;
@@ -206,6 +211,7 @@ nav.navbar {
 }
 
 .arrow {
+  font-size: 22px;
   position: absolute;
   bottom: 15px;
   color: white;
@@ -228,6 +234,7 @@ nav.navbar {
   font-size: 40px;
   letter-spacing: 5px;
   font-family: "Spartan", sans-serif;
+  margin-bottom: 40px;
 }
 
 .services-one {
@@ -278,34 +285,12 @@ nav.navbar {
   font-size: 20px;
 }
 
-.btn-wrap {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .btn-services {
   font-size: 10px;
   color: #ffffff;
   background-color: #413c3c;
   width: 150px;
   height: 40px;
-}
-
-.img-fluid {
-  min-width: 400px !important;
-  min-height: 400px !important;
-}
-
-.separation {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.services-paragraph {
-  border: none !important;
 }
 
 .ideal-title {
@@ -327,34 +312,19 @@ nav.navbar {
   letter-spacing: 3px;
 }
 
-.pd-parallax {
-  position: relative;
-  font-family: "Spartan", sans-serif;
-  color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 300px;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 50px;
-}
-
-.pd-parallax h1 {
+.pd-image h1 {
   padding: 20px;
   font-size: 25px;
   letter-spacing: 5px;
 }
 
-.pd-parallax h3 {
+.pd-image h3 {
   font-size: 15px;
 }
 
-.pd-parallax .pd-title {
-  padding-top: 50px;
-  width: 900px;
+.pd-image .pd-title {
   margin: 0 auto;
+  width: 500px;
 }
 
 .contact {
@@ -402,9 +372,6 @@ nav.navbar {
   right: 0;
   position: absolute;
   z-index: -1;
-}
-
-.wrap-team-info {
 }
 
 .bold-team {
@@ -513,6 +480,12 @@ nav.navbar {
   animation-duration: 2s;
 }
 
+.form-control:focus,
+.form-control:active {
+  border: none;
+  box-shadow: 0px 0px 0px 0px;
+}
+
 .justify-content {
   display: flex;
   justify-content: space-evenly;
@@ -531,4 +504,288 @@ nav.navbar {
 
 .vr-copyright:hover {
   color: #681212;
+}
+
+/*Media queries*/
+
+@media (max-width: 990px) {
+  /*Header*/
+
+  .title {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    margin-top: 15px;
+    font-size: 15px !important;
+  }
+
+  .arrow {
+    font-size: 13px;
+  }
+
+  .pd-image h1 {
+    font-size: 15px;
+  }
+
+  .pd-image h3 {
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 10px;
+    width: 150px;
+    height: 40px;
+    margin-top: 12px;
+  }
+
+  /*Services*/
+
+  .sec-title {
+    margin-bottom: 15px;
+  }
+
+  .card-services {
+    width: 300px;
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .ideal-title {
+    font-size: 25px;
+  }
+
+  .ideal-subtitle {
+    font-size: 15px;
+  }
+
+  .ideal-paragraph {
+    border-left: none;
+    border-top: 1px solid #888080;
+    padding-left: 0px;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+
+  .pd-image .pd-title {
+    width: 300px;
+  }
+
+  .pd-image h1 {
+    font-size: 25px;
+  }
+
+  .pd-image h3 {
+    font-size: 12px;
+  }
+
+  .first-title-info {
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .ideal-paragraph {
+    border-left: 1px solid #888080;
+    border-top: none;
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+  .pd-image .pd-title {
+    width: 400px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  /*Header*/
+
+  .title {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    margin-top: 15px;
+    font-size: 20px !important;
+  }
+
+  .arrow {
+    font-size: 15px;
+  }
+
+  .pd-image h1 {
+    font-size: 18px;
+  }
+
+  .pd-image h3 {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 12px;
+    width: 170px;
+    height: 45px;
+    margin-top: 12px;
+  }
+
+  /*Services*/
+
+  .sec-title {
+    margin-bottom: 15px;
+  }
+
+  .card-services {
+    width: 230px;
+    height: 250px;
+    margin-top: 0px;
+  }
+
+  .ideal-paragraph {
+    border-left: 1px solid #888080;
+    border-top: none;
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+
+  .pd-image .pd-title {
+    width: 500px;
+  }
+}
+
+@media (min-width: 2000px) {
+  /*Header*/
+
+  .title {
+    font-size: 100px;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    margin-top: 15px;
+    font-size: 50px !important;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+
+  .pd-image h1 {
+    font-size: 28px;
+  }
+
+  .pd-image h3 {
+    font-size: 23px;
+  }
+
+  .btn {
+    font-size: 23px;
+    width: 300px;
+    height: 85px;
+    margin-top: 12px;
+  }
+
+  /*Services*/
+
+  .sec-title {
+    margin-bottom: 35px;
+  }
+
+  .card-services {
+    width: 480px;
+  }
+
+  .ideal-title {
+    font-size: 55px;
+  }
+
+  .ideal-subtitle {
+    font-size: 35px;
+  }
+
+  .ideal-paragraph {
+    border-left: 1px solid #888080;
+    border-top: none;
+    padding-left: 10px;
+    padding-top: 0px;
+    font-size: 25px;
+  }
+
+  .first-title-info {
+    text-align: left;
+    font-family: "Spartan", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+  }
+
+  .title-info {
+    font-weight: bold;
+    border-bottom: 3px solid #681212;
+  }
+
+  .paragraph-info {
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  .bold-info {
+    font-size: 35px;
+  }
+
+  /*About us*/
+  .wrap-team-info {
+    width: 1100px;
+    margin-left: 50px;
+  }
+
+  .team-title {
+    font-size: 45px;
+  }
+
+  .team-subtitle {
+    font-size: 28px;
+  }
+
+  .team-text {
+    font-size: 25px;
+  }
+
+  /*Contact*/
+  .contact-title {
+    font-size: 60px;
+    margin-top: 60px;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .contact-subtitle {
+    font-weight: bold;
+    font-family: "Spartan", sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .contact-text {
+    font-size: 25px;
+  }
+
+  .social-item {
+    font-size: 25px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    margin-top: 40px;
+  }
+
+  .contact-btn {
+    font-size: 25px;
+    width: 350px;
+    height: 90px;
+    margin-top: 50px;
+  }
+
+  .copyright {
+    font-size: 20px;
+  }
 }
